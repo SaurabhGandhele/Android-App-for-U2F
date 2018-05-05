@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout
+		android:weightSum="2"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<Button
+
+			android:textStyle="bold"
+			android:id="@+id/scanButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/holo_blue_dark"
+			android:text="Scan Devices"
+			android:textColor="@color/Whitish"
+			android:layout_weight="1"/>
+		<Button
+			android:textStyle="bold"
+			android:visibility="gone"
+			android:id="@+id/addressButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="MAC"/>
+
+		<Button
+			android:textStyle="bold"
+			android:id="@+id/nameButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/holo_orange_dark"
+			android:text="Scan by Name"
+			android:textColor="@color/Whitish"
+			android:layout_weight="1"/>
+	</LinearLayout>
+	<LinearLayout
+		android:weightSum="2"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<Button
+			android:textStyle="bold"
+			android:id="@+id/registerButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/holo_green_dark"
+			android:text="Register U2F"
+			android:textColor="@color/Whitish"
+			android:layout_weight="1"/>
+
+		<Button
+			android:textStyle="bold"
+			android:id="@+id/authenticateButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/holo_red_dark"
+			android:text="Authenticate U2F"
+			android:textColor="@color/Whitish"
+			android:layout_weight="1"/>
+		<Button
+			android:textStyle="bold"
+			android:visibility="gone"
+			android:id="@+id/authenticateCheckButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Auth (check)"/>
+	</LinearLayout>
+	<LinearLayout
+		android:weightSum="2"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<Button
+			android:textStyle="bold"
+			android:id="@+id/disconnectButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/Brown"
+			android:text="Disconnect"
+			android:textColor="@color/Whitish"
+			android:layout_weight="1"/>
+
+		<Button
+			android:textStyle="bold"
+			android:id="@+id/clearLogButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/Purple"
+			android:text="Clear Logs"
+			android:textColor="@color/Whitish"
+			android:layout_weight="1"/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<Button
+			android:textStyle="bold"
+			android:visibility="gone"
+			android:id="@+id/invalidAp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Bad app params"/>
+		<Button
+			android:textStyle="bold"
+			android:visibility="gone"
+			android:id="@+id/invalidKeyhandle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Bad key handle"/>
+	</LinearLayout>
+
+	<TextView
+		android:textStyle="bold"
+		android:id="@+id/logView"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scrollbars="vertical"
+		android:text=""
+		android:textColor="@android:color/holo_red_light"
+		android:textSize="18sp" />
+</LinearLayout>
