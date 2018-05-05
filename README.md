@@ -31,5 +31,5 @@ Logs can be obtained through logcat or by long clicking the log window then copy
 Contact
 =======
 
-Please report bugs and features to hello@ledger.fr
+Please report bugs and features to smg6512@rit.edu
 
